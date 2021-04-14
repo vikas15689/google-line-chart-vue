@@ -7,6 +7,6 @@ Vue.config.productionTip = false;
  * App is bootstraped with 'App' component and store
  */
 new Vue({
-    store,
-    render: (h) => h(App),
+  store,
+  render: (h) => h(App),
 }).$mount("#app");
