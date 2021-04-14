@@ -1,28 +1,48 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+  <div class="app-container">
+    <!--Rendering MetricChart as landing module/view-->
+    <MetricChart />
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-
+import MetricChart from "./modules/metrics/MetricChart";
 export default {
   name: "App",
   components: {
-    HelloWorld,
+    MetricChart,
   },
 };
 </script>
 
 <style lang="scss">
-#app {
+body {
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  font-size: 16px;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f6f8fa;
+
+  div.app-container {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    > * + * {
+      margin-top: 16px;
+    }
+  }
+
+  select {
+    padding: 4px 8px 4px 8px;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    border: 1px solid lightgray;
+    color: black;
+    min-width: 150px;
+    border-radius: 4px;
+  }
 }
 </style>
