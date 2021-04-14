@@ -1,4 +1,4 @@
-# google-line-chart-vue
+# [google-line-chart-vue](https://vikas15689.github.io/google-line-chart-vue/)
 
 ## Project setup
 ```
